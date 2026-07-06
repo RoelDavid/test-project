@@ -6,10 +6,11 @@ body {
   background-repeat: no-repeat;
   margin: 10px;
   padding: 10px;
+  min-height: 100vh;
 }
 
 .card {
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
   display: flex;
   align-items: center;
@@ -19,6 +20,7 @@ body {
   background-repeat: no-repeat;
   color: white;
   border: 2px solid black;
+  border-radius: 5px;
   text-align: center;
   box-shadow: 2px 0px 4px whitesmoke;
   animation: fadeInCard 1.2s ease-out forwards;
@@ -44,5 +46,57 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.navbar {
+  font-family: Arial, sans-serif;
+  list-style: none;
+}
+.navbar__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin: 20px;
+  padding: 20px;
+  gap: 40px;
+}
+
+button {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYt3ToeWj6lbA5wZSnkn8-Dao6yk8ZsVdc1Nn0M5PXVC6bEPRPq-dMWzvx&s=10);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 10px 25px;
+  box-shadow: 2px 0px 4px whitesmoke;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 0px 8px whitesmoke;
+}
+
+button:active {
+  transform: scale(0.95);
+  color: black;
+}
+
+@media (max-width: 520px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card__logo {
+    margin-bottom: 5px;
+  }
+
+  .navbar__buttons {
+    flex-direction: column;
+    gap: 20px;
   }
 }
