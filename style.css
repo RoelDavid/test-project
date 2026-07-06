@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://img.magnific.com/free-photo/dark-grunge-texture-background-with-scratches-stains_1048-18915.jpg?semt=ais_hybrid&w=740&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYt3ToeWj6lbA5wZSnkn8-Dao6yk8ZsVdc1Nn0M5PXVC6bEPRPq-dMWzvx&s=10);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  border: 2px solid black;
+  text-align: center;
+  box-shadow: 2px 0px 4px whitesmoke;
+  animation: fadeInCard 1.2s ease-out forwards;
+}
+
+.card__logo {
+  width: 100px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 5%;
+}
+
+.card__content {
+  flex: 1;
+  padding: 10px;
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
